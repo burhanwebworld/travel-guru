@@ -1,0 +1,47 @@
+[debug] [2021-04-02T10:33:10.848Z] ----------------------------------------------------------------------
+[debug] [2021-04-02T10:33:10.859Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\burhan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-04-02T10:33:10.861Z] CLI Version:   9.8.0
+[debug] [2021-04-02T10:33:10.861Z] Platform:      win32
+[debug] [2021-04-02T10:33:10.861Z] Node Version:  v14.15.2
+[debug] [2021-04-02T10:33:10.864Z] Time:          Fri Apr 02 2021 16:33:10 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-04-02T10:33:10.864Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-04-02T10:33:10.901Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-02T10:33:10.905Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\web project\travel-guru
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using travel-guru-dhaka. 
+[debug] [2021-04-02T10:34:06.965Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/travel-guru-dhaka [none]
+[debug] [2021-04-02T10:34:08.807Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/travel-guru-dhaka 403
+[debug] [2021-04-02T10:34:08.808Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/travel-guru-dhaka {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-04-02T10:34:08.809Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-04-02T10:34:09.095Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\burhan\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\burhan\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Client.request (C:\Users\burhan\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\burhan\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:289:21)
+    at async Object.doSetup [as project] (C:\Users\burhan\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\burhan\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project travel-guru-dhaka. Please make sure the project exists and your account has permission to access it.

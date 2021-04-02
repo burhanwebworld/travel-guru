@@ -1,0 +1,32 @@
+
+.logo{
+    height: 60px;
+    filter: brightness(800%);
+}
+.searchtype{
+    width: 380px;
+    height: 45px;
+    border-radius: 10px;
+}
+.nav{
+   justify-content: space-between;
+    padding: 30px 0px;
+}
+.nav li{
+    display: inline;
+    margin-left: 50px;
+    
+  }
+  
+  .nav a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.877);
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .nav-links:hover {
+    border-bottom: 4px solid #900C3F ;
+    transition: all 0.2s ease-out;
+    text-decoration: none;
+    transition: 250ms;
+  }
